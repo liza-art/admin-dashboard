@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    
+    font-family: arial;
 }
 
 
@@ -21,18 +21,22 @@
 }
 
 .header{
-    font-family: roboto;
     display: grid;
     grid-template-rows: 9vh 9vh;
 }
 
 .info-section{
     border: solid 3px purple;
-    font-family: roboto;
+    display: grid;
+    grid-template-columns:2fr 1fr;
+}
+
+.info-left,
+.info-right{
+    border: solid 2px green;
 }
 
 .first-line{
-    font-family: roboto;
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
@@ -94,4 +98,44 @@ button{
     width: 70px;
     background-color: #083344;
     font-weight: 600;
+}
+
+.para-grid{
+    border: solid 2px lightgrey;
+    border-left: solid 8px lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+h3{
+    font-family: arial;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 26px;
+    font-weight: 600;
+}
+
+.info-left{
+    display: grid;
+    grid-template-rows: 8vh 92vh ;
+}
+
+.under-caption{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh;
+    row-gap: 28px;
+    column-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p{
+    font-size: 12px;
 }
